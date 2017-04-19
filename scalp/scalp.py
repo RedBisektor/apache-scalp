@@ -68,7 +68,7 @@ names = {
     'lfi'  : 'Local File Inclusion'
 }
 
-c_reg = re.compile(r'^(.+)-(.*)\[(.+)[-|+](\d+)\] "([A-Z]+)?(.+) HTTP/\d.\d" (\d+)(\s[\d]+)?(\s"(.+)" )?(.*)$')
+c_reg = re.compile(r'^(.+)-(.*)\[(.+)[-|+](\d+)\] "([A-Z]+)?(.+) (HTTP/\d.\d|apache)" (\d+)(\s[\d]+)?(\s"(.+)" )?(.*)$')
 table = {}
 
 class BreakLoop( Exception ):
